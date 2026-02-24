@@ -9,11 +9,12 @@
         To prove the direct implication, start by proving this lemma:
 
         \begin{lemma}
-        \textcolor{blue}{If $v_1 \in Q$ and $v_2 \notin Q$, then $v_1+v_2 \notin Q$ where $Q$ is any subspace of $V$.}
+        If $v_1 \in Q$ and $v_2 \notin Q$, then $v_1+v_2 \notin Q$ where $Q$ is any subspace of $V$.
         \end{lemma}
+        \begin{proof}
+            Asumme by contradiction that $v_1+v_2 \in Q$, then by subspace properties: $(v_1+v_2) - v_1 \in Q$ $\Rightarrow$ $v_2 \in Q$, which contradicts the initial assuptions, thus proving the lemma.
+        \end{proof}
         
-        Asumme by contradiction that $v_1+v_2 \in Q$, then by subspace properties: $(v_1+v_2) - v_1 \in Q$ $\Rightarrow$ $v_2 \in Q$, which contradicts the initial assuptions, thus proving the lemma.
-
         Now let's return to the main proof. Assume $U \cup W$ is a subspace. We want to prove that $U \subseteq W$.
         
         Take $u \in U$, an arbitrary vector. Also consider $w$, a vector such that $w \in W$ but $w \notin U$. Notice that both elements belong to $U \cup W$, therefore $u + w \in U \cup W$, since it is a subspace. But using our lemma, $u + w \notin U$, which implies $u + w \in W$. Since $w \in W \Rightarrow -w \in W$, by adding two elements from W, we obtain an element of W since it is a subspace, so: $(u+w) + (-w) \in W$. We just showed $u \in W$. Hence, $U \subseteq W$.
