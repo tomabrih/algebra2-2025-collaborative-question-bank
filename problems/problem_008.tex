@@ -1,12 +1,16 @@
-\begin{exercise}[Prove that the union of two subspaces of V is a subspace of V if and only if one of the subspaces is contained in the other]
+\begin{exercise}[When is the union of subspaces a subspace?]
 
+    Prove that the union of two subspaces of $V$ is a subspace of $V$ if and only if one of the subspaces is contained in the other
+    
     \begin{solution}[Toma]
-       Let U and W two subspaces of V.
+       Let $U$ and $W$ two subspaces of $V$.
        To prove the inverse implication, assume $U \subseteq W$. Hence, $U \cup W = W$ which is a subspace.
 
         To prove the direct implication, start by proving this lemma:
-        
-        \textcolor{blue}{If $v_1 \in Q$ and $v_2 \notin Q$, then $v_1+v_2 \notin Q$ where Q is any subspace of V.}
+
+        \begin{lemma}
+        \textcolor{blue}{If $v_1 \in Q$ and $v_2 \notin Q$, then $v_1+v_2 \notin Q$ where $Q$ is any subspace of $V$.}
+        \end{lemma}
         
         Asumme by contradiction that $v_1+v_2 \in Q$, then by subspace properties: $(v_1+v_2) - v_1 \in Q$ $\Rightarrow$ $v_2 \in Q$, which contradicts the initial assuptions, thus proving the lemma.
 
